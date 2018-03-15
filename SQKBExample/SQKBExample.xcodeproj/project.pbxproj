@@ -12,6 +12,7 @@
 		0FFBFD30205A75BA00CD25A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFBFD2E205A75BA00CD25A8 /* Main.storyboard */; };
 		0FFBFD32205A75BA00CD25A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFBFD31205A75BA00CD25A8 /* Assets.xcassets */; };
 		0FFBFD35205A75BA00CD25A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFBFD33205A75BA00CD25A8 /* LaunchScreen.storyboard */; };
+		998633085D740FFCC3C1F9E0 /* Pods_SQKBExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33066BE47C791BFC96D7748 /* Pods_SQKBExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0FFBFD31205A75BA00CD25A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FFBFD34205A75BA00CD25A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FFBFD36205A75BB00CD25A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99A81F5DA4BD394EB0C0A5A /* Pods-SQKBExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQKBExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQKBExample/Pods-SQKBExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C33066BE47C791BFC96D7748 /* Pods_SQKBExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQKBExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00E76C9942879897719C55F /* Pods-SQKBExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQKBExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQKBExample/Pods-SQKBExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998633085D740FFCC3C1F9E0 /* Pods_SQKBExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D8EA6AA4E8A07EC94AE73F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A99A81F5DA4BD394EB0C0A5A /* Pods-SQKBExample.debug.xcconfig */,
+				F00E76C9942879897719C55F /* Pods-SQKBExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0FFBFD1E205A75BA00CD25A8 = {
 			isa = PBXGroup;
 			children = (
 				0FFBFD29205A75BA00CD25A8 /* SQKBExample */,
 				0FFBFD28205A75BA00CD25A8 /* Products */,
+				05D8EA6AA4E8A07EC94AE73F /* Pods */,
+				ACE859426AB0584DB629958C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = SQKBExample;
 			sourceTree = "<group>";
 		};
+		ACE859426AB0584DB629958C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C33066BE47C791BFC96D7748 /* Pods_SQKBExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FFBFD39205A75BB00CD25A8 /* Build configuration list for PBXNativeTarget "SQKBExample" */;
 			buildPhases = (
+				B98FE4D01E9FF6CE87029242 /* [CP] Check Pods Manifest.lock */,
 				0FFBFD23205A75BA00CD25A8 /* Sources */,
 				0FFBFD24205A75BA00CD25A8 /* Frameworks */,
 				0FFBFD25205A75BA00CD25A8 /* Resources */,
+				E67C79CDB121993810FACF12 /* [CP] Embed Pods Frameworks */,
+				6872D75A6FA568D72D9CC817 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6872D75A6FA568D72D9CC817 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQKBExample/Pods-SQKBExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B98FE4D01E9FF6CE87029242 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E67C79CDB121993810FACF12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQKBExample/Pods-SQKBExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FFBFD23205A75BA00CD25A8 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		0FFBFD3A205A75BB00CD25A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A99A81F5DA4BD394EB0C0A5A /* Pods-SQKBExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2VXAK557JC;
@@ -275,6 +351,7 @@
 		};
 		0FFBFD3B205A75BB00CD25A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00E76C9942879897719C55F /* Pods-SQKBExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2VXAK557JC;
